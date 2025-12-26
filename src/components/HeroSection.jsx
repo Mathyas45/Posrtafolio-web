@@ -58,6 +58,16 @@ export const HeroSection = () => {
     window.open('https://drive.google.com/file/d/TU_ID_DE_GOOGLE_DRIVE', '_blank', 'noopener,noreferrer');
   };
 
+  const handleDownloadCV = () => {
+    // Descargar CV directamente
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/uc?export=download&id=TU_ID_DE_GOOGLE_DRIVE';
+    link.download = 'CV_Mathyas_Coronado.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-background via-background/95 to-primary/10" ref={ref}>
       
@@ -167,7 +177,7 @@ export const HeroSection = () => {
                     <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
                   </div>
                   <div className="flex-1 text-center">
-                    <div className="text-sm font-mono font-semibold text-muted-foreground">portfolio.js</div>
+                    <div className="text-sm font-mono font-semibold text-muted-foreground">portafolio.js</div>
                   </div>
                   <div className="w-4 h-4 bg-green-400/20 rounded-full animate-pulse"></div>
                 </div>
@@ -241,6 +251,35 @@ export const HeroSection = () => {
           <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }} className="w-1 h-2 bg-primary rounded-full mt-2" />
         </motion.div>
       </motion.div>
+
+      {/* Botón Flotante de Descarga de CV */}
+      <motion.button
+        onClick={handleDownloadCV}
+        className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-primary/50 flex items-center gap-3 group transition-all duration-300 hover:scale-105"
+        initial={{ scale: 0, rotate: -180 }}
+        animate={{ scale: 1, rotate: 0 }}
+        transition={{ delay: 1, type: "spring", stiffness: 200 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Download className="h-5 w-5 group-hover:animate-bounce" />
+        <span className="font-semibold hidden sm:block">Descargar CV</span>
+        <span className="font-semibold sm:hidden">CV</span>
+        
+        {/* Efecto de pulso */}
+        <motion.div
+          className="absolute inset-0 rounded-full bg-primary opacity-20"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.2, 0, 0.2]
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+      </motion.button>
     </section>
   );
 };

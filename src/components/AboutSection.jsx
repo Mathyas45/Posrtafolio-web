@@ -30,7 +30,7 @@ export const AboutSection = () => {
   ];
 
   const tabContent = {
-    personal: "Apasionado por crear soluciones de software que generen impacto. Cuando no estoy programando, estoy aprendiendo nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimiento con la comunidad.",
+    personal: "Soy Mathyas Coronado, Ingeniero de Sistemas con experiencia en desarrollo de software web, enfocado principalmente en backend, arquitectura de aplicaciones y construcción de soluciones escalables y mantenibles.Actualmente curso la Maestría en Ingeniería de Software, donde vengo fortaleciendo mis conocimientos en arquitectura de software, patrones de diseño, buenas prácticas y calidad técnica, aplicándolos directamente en proyectos reales. Me especializo en el desarrollo de APIs REST y sistemas administrativos utilizando Java con Spring Boot, PHP (Laravel) y bases de datos relacionales como PostgreSQL y MySQL. También tengo experiencia integrando frontends modernos con Angular, así como en el desarrollo de aplicaciones móviles con Kotlin, logrando soluciones multiplataforma.",
     professional: "Con más de 3 años en desarrollo backend y full stack, he trabajado en más de 10 proyectos exitosos usando tecnologías modernas. Me especializo en arquitectura escalable, patrones de diseño y optimización de rendimiento. Actualmente curso una Maestría en Ingeniería de Software.",
     approach: "Creo en el código limpio, testing exhaustivo y diseño centrado en el usuario. Mi proceso enfatiza la colaboración, metodologías ágiles y mejora continua aplicando principios SOLID y DDD."
   };
