@@ -66,7 +66,7 @@ export const Navbar = () => {
   const lastScrollYRef = useRef(0);
   const audioRef = useRef(null);
 
-  const musicUrl = "/rochas_chetas.mp3";
+  const musicUrl = "/Beethoven.mp3";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
