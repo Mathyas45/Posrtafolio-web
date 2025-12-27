@@ -49,7 +49,7 @@ const projects = [
     title: "Sistema ATU - Backend",
     category: "Backend",
     description: "Backend robusto con Spring Boot para gestión de trámites, reclamos y estados. Apoyo en construcción del backend y documentación completa del sistema. APIs REST con arquitectura limpia.",
-    image: "/projects/atu.png",
+    image: "/projects/atu.jpg",
     gallery: [
       "/projects/atu.png",
       "/projects/atu-1.png",
@@ -69,13 +69,13 @@ const projects = [
     title: "Sistema de Cotización de Préstamos Bancarios",
     category: "Full Stack",
     description: "Proyecto de Maestría en Ingeniería de Software. Sistema completo con backend Spring Boot, panel administrativo Angular y aplicación móvil Kotlin. JWT, roles, permisos y arquitectura en capas.",
-    image: "/projects/cotizacion-bancaria.png",
+    image: "/projects/cotizador-app.jpg",
     gallery: [
-      "/projects/cotizacion-bancaria.png",
-      "/projects/cotizacion-bancaria-1.png",
-      "/projects/cotizacion-bancaria-2.png",
-      "/projects/cotizacion-bancaria-3.png",
-      "/projects/cotizacion-bancaria-4.png"
+      "/projects/cotizador-app.jpg",
+      "/projects/cotizador-app-1.jpg",
+      "/projects/cotizador-app-2.jpg",
+      "/projects/cotizador-app-3.jpg",
+      "/projects/cotizador-app-4.jpg"
     ],
     video: "/projects/videos/banking-demo.mp4",
     tags: ["Spring Boot", "Angular", "Kotlin", "JWT", "PostgreSQL"],
@@ -91,11 +91,11 @@ const projects = [
     title: "Sistema Odontológico Universitario",
     category: "Backend",
     description: "Backend para sistema médico de facultad de odontología. Módulos de usuarios, estudiantes, docentes, pacientes, odontograma, citas, fichas sintomatológicas y registro de pacientes.",
-    image: "/projects/odontologia.png",
+    image: "/projects/Odontológico.jpg",
     gallery: [
-      "/projects/odontologia.png",
-      "/projects/odontologia-1.png",
-      "/projects/odontologia-2.png"
+      "/projects/Odontológico.jpg",
+      "/projects/Odontológico-1.jpg",
+      "/projects/Odontológico-2.jpg"
     ],
     video: "/projects/videos/odonto-demo.mp4",
     tags: ["Laravel", "PHP", "MySQL", "REST API"],
@@ -110,7 +110,7 @@ const projects = [
     title: "Sistema Punto de Venta",
     category: "Full Stack",
     description: "Sistema completo de punto de venta con PHP puro, MySQL y Bootstrap. Patrón MVC con módulos de productos, ventas, usuarios, clientes, trabajadores, asistencia, reportes y tipo de cambio desde API.",
-    image: "/projects/pos.png",
+    image: "/projects/pos.jpg",
     gallery: [
       "/projects/pos.png",
       "/projects/pos-1.png",
@@ -130,7 +130,7 @@ const projects = [
     title: "Adopta Pup",
     category: "Móvil",
     description: "App móvil para adopción de animales abandonados. Android Studio con Kotlin y Firebase. Integración con API para datos de animales. Chatbot con OpenAI para cuidados. Primer lugar en concurso de programación Universidad Continental.",
-    image: "/projects/adoptapup.png",
+    image: "/projects/adpta.png",
     gallery: [
       "/projects/adoptapup.png",
       "/projects/adoptapup-1.png",
@@ -152,7 +152,7 @@ const projects = [
     title: "Sistema de Asistencias para Personal",
     category: "Full Stack",
     description: "Sistema de control de asistencias con Laravel, MySQL y Bootstrap 5. Implementación de Spatie. Módulos de usuarios, miembros, asistencias, reportes y dashboard interactivo.",
-    image: "/projects/asistencias.png",
+    image: "/projects/asistencia.jpg",
     gallery: [
       "/projects/asistencias.png",
       "/projects/asistencias-1.png",

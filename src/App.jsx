@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import WelcomeScreen from "@/components/WelcomeScreen";
+import { FloatingMusicButton } from "@/components/FloatingMusicButton";
 import { Analytics } from "@vercel/analytics/react"; 
 
 function App() {
@@ -21,13 +22,16 @@ function App() {
       {!welcomeComplete ? (
         <WelcomeScreen onWelcomeComplete={() => setWelcomeComplete(true)} />
       ) : (
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Analytics />
-        </BrowserRouter>
+        <>
+          <FloatingMusicButton />
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Analytics />
+          </BrowserRouter>
+        </>
       )}
     </ThemeProvider>
   );

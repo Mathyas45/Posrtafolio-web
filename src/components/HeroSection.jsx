@@ -250,16 +250,16 @@ export const HeroSection = () => {
       {/* Botón Flotante de Descarga de CV */}
       <motion.button
         onClick={handleDownloadCV}
-        className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-primary/50 flex items-center gap-3 group transition-all duration-300 hover:scale-105"
+        className="fixed bottom-20 sm:bottom-8 right-4 sm:right-8 z-50 bg-gradient-to-r from-primary to-purple-600 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-full shadow-2xl hover:shadow-primary/50 flex items-center gap-2 sm:gap-3 group transition-all duration-300 hover:scale-105"
         initial={{ scale: 0, rotate: -180 }}
         animate={{ scale: 1, rotate: 0 }}
         transition={{ delay: 1, type: "spring", stiffness: 200 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Download className="h-5 w-5 group-hover:animate-bounce" />
+        <Download className="h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-bounce" />
         <span className="font-semibold hidden sm:block">Descargar CV</span>
-        <span className="font-semibold sm:hidden">CV</span>
+        <span className="font-semibold text-sm sm:hidden">CV</span>
         
         {/* Efecto de pulso */}
         <motion.div
