@@ -49,7 +49,7 @@ export const AboutSection = () => {
   // Función de descarga programática
   const handleDownload = () => {
     // Reemplazar con tu enlace de Google Drive
-    window.open('https://drive.google.com/file/d/TU_ID_DE_GOOGLE_DRIVE', '_blank', 'noopener,noreferrer');
+    window.open('https://drive.google.com/file/d/1gj9w2oflSWqH6wZXV__rgtSBms6E_ydy/view?usp=sharing', '_blank', 'noopener,noreferrer');
   };
 
   return (

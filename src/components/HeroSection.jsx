@@ -55,17 +55,12 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Abrir CV en nueva pestaña (reemplazar con tu enlace de Google Drive)
-    window.open('https://drive.google.com/file/d/TU_ID_DE_GOOGLE_DRIVE', '_blank', 'noopener,noreferrer');
+    window.open('https://drive.google.com/file/d/1gj9w2oflSWqH6wZXV__rgtSBms6E_ydy/view?usp=sharing', '_blank', 'noopener,noreferrer');
   };
 
   const handleDownloadCV = () => {
-    // Descargar CV directamente
-    const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=TU_ID_DE_GOOGLE_DRIVE';
-    link.download = 'CV_Mathyas_Coronado.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Abrir CV en nueva pestaña
+    window.open('https://drive.google.com/file/d/1gj9w2oflSWqH6wZXV__rgtSBms6E_ydy/view?usp=sharing', '_blank', 'noopener,noreferrer');
   };
 
   return (
