@@ -72,12 +72,17 @@ export const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formspree.io/f/xwpbojaj', {
+      // Codificar los datos del formulario para Netlify Forms
+      const formDataEncoded = new FormData();
+      formDataEncoded.append('form-name', 'contact');
+      formDataEncoded.append('name', formData.name);
+      formDataEncoded.append('email', formData.email);
+      formDataEncoded.append('message', formData.message);
+
+      const response = await fetch('/', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formDataEncoded).toString(),
       });
 
       if (response.ok) {
@@ -216,7 +221,24 @@ export const ContactSection = () => {
               Envíame un Mensaje
             </h3>
 
-            <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
+            <form 
+              className="space-y-4 sm:space-y-6" 
+              onSubmit={handleSubmit}
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              {/* Campo oculto necesario para Netlify Forms */}
+              <input type="hidden" name="form-name" value="contact" />
+              
+              {/* Campo honeypot para prevenir spam */}
+              <p className="hidden">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="space-y-1">
                 <label
                   htmlFor="name"
